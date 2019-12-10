@@ -33,5 +33,8 @@
 ## 添加索引：
 
 ## 查询索引:
-  1.show index from aaa;
-  2.show keys from aaa;
+  1. show index from aaa;
+  2. show keys from aaa;
+  1. show status like 'Header_read%';//查询索引使用率
+      + Header_read_key 越高越好，表示使用索引次数多
+      + Header_read_rnd_next 越低越好
