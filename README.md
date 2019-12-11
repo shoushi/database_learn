@@ -38,3 +38,7 @@
   1. show status like 'Header_read%';//查询索引使用率
       + Header_read_key 越高越好，表示使用索引次数多
       + Header_read_rnd_next 越低越好
+## 如何选择mysql存储引擎
+  1. myisam,对事务要求不高，同时以查询和添加为主的情况。
+  2. INNODB,对事务要求高，数据重要。
+  2. Memory，数据变化频繁，不需要入库，查询、修改频繁。
