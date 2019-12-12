@@ -39,6 +39,12 @@
       + Header_read_key 越高越好，表示使用索引次数多
       + Header_read_rnd_next 越低越好
 ## 如何选择mysql存储引擎
-  1. myisam,对事务要求不高，同时以查询和添加为主的情况。
+  1. Myisam,对事务要求不高，同时以查询和添加为主的情况。
   2. INNODB,对事务要求高，数据重要。
   2. Memory，数据变化频繁，不需要入库，查询、修改频繁。
+## Myisam引擎,INNODB引擎的区别
+  1. 事务安全，Myisam不支持事务。
+  1. 查询添加速度，Myisam速度快。
+  3. Myisam支持全文索引。
+  4. Myisam为表锁，INNODB为行锁。
+  5. Myisam不支持外键。
